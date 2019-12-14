@@ -1,18 +1,4 @@
 
-
-/* --- [Master Stylesheet] ----
-:: 1.0 Base CSS Start
-:: 2.0 Header Area CSS
-:: 3.0 Welcome Area CSS
-:: 4.0 Special Area CSS
-:: 5.0 Features Area CSS
-:: 6.0 Video Area CSS
-:: 7.0 Cool Facts Area CSS
-:: 8.0 Images Area CSS
-:: 9.0 Contact Area CSS
-:: 10.0 Footer Area CSS Start
--------------------------- */
-
 @import 'css/style.css';
 @import 'css/bootstrap.min.css';
 @import 'css/animate.css';
@@ -23,7 +9,7 @@
 @import 'css/ionicons.min.css';
 
 /* --------------------------
-:: 1.0 Base CSS Start
+:: Base CSS Start
 -------------------------- */
 
 * {
@@ -47,6 +33,11 @@ h6 {
     font-weight: 400;
     color: #000;
     line-height: 1.2;
+}
+
+.section_padding_30_50 {
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 .section_padding_100 {
@@ -92,9 +83,9 @@ h6 {
  padding-bottom: 100px;
 }
 
-.section_padding_70 {
-    padding-top: 70px;
-    padding-bottom: 70px;
+.section_padding_20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .section_padding_0_50 {
@@ -237,7 +228,7 @@ p {
 
 
 .section-heading {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 .line-shape-white,
@@ -246,6 +237,7 @@ p {
     height: 2px;
     background-color: #fb397d;
     margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .line-shape {
@@ -317,7 +309,7 @@ p {
 }
 
 /* --------------------------
-:: 2.0 Header Area CSS
+:: Header Area CSS
 -------------------------- */
 
 .header_area {
@@ -338,6 +330,9 @@ p {
     padding: 0;
 }
 
+.menu_area .navbar-brand img{
+    width: 70%;
+}
 
 .menu_area .navbar-brand:hover,
 .menu_area .navbar-brand:focus {
@@ -403,7 +398,7 @@ p {
 
 
 /* --------------------------
-:: 3.0 welcome_area Area CSS
+:: welcome_area Area CSS
 -------------------------- */
 
 .wellcome_area {
@@ -440,7 +435,7 @@ p {
 
 .welcome-thumb img {
     height: auto;
-    width: 100%;
+    width: 60%;
 }
 
 .wellcome-heading > h2 {
@@ -480,7 +475,7 @@ p {
 }
 
 /* --------------------------
-:: 4.0 Special Area CSS
+:: Special Area CSS
 -------------------------- */
 
 .single-icon > i {
@@ -599,7 +594,7 @@ p {
 }
 
 /* --------------------------
-:: 5.0 Features Area CSS
+:: Features Area CSS
 -------------------------- */
 
 .single-feature {
@@ -623,7 +618,6 @@ p {
     font-size: 22px;
     color: #5b32b4;
     margin-right: 50px;
-
 }
 
 .single-feature > p {
@@ -631,129 +625,23 @@ p {
 }
 
 /* --------------------------
-:: 6.0 Video Area CSS
--------------------------- */
-
-.video-area {
-    position: relative;
-    z-index: 1;
-    background-position: center center;
-    background-size: cover;
-    border: 20px solid #fff;
-    border-radius: 20px;
-    height: 650px;
-    -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08);
-    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.08);
-}
-
-.video-area:after {
-    position: absolute;
-    content: "";
-    top: -20px;
-    left: -20px;
-    width: calc(100% + 40px);
-    height: calc(100% + 40px);
-    border: 1px solid #f1f4f8;
-    z-index: 2;
-    border-radius: 20px;
-}
-
-
-.video-area .video-play-btn a {
-    width: 80px;
-    height: 80px;
-    background-color: #fb397d;
-    color: #fff;
-    text-align: center;
-    display: block;
-    font-size: 36px;
-    line-height: 80px;
-    padding-left: 5px;
-    border-radius: 50%;
-    top: 50%;
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    z-index: 3;
-}
-
-.video-area .video-play-btn a:hover {
-    background-color: #a865e1;
-    color: #fff;
-}
-
-/* --------------------------
-:: 7.0 Cool Facts Area CSS
--------------------------- */
-
-.cool_facts_area {
-    position: relative;
-    z-index: auto;
-    background: #a865e1;
-    background: -webkit-linear-gradient(to left, #7873ed, #a865e1);
-    background: -webkit-linear-gradient(right, #7873ed, #a865e1);
-    background: -webkit-gradient(linear, right top, left top, from(#7873ed), to(#a865e1));
-    background: -o-linear-gradient(right, #7873ed, #a865e1);
-    background: linear-gradient(to left, #7873ed, #a865e1);
-    /*padding: 180px 0 80px 0;
-    top: -100px;*/
-}
-
-
-.cool_facts_area:after {
-    position: absolute;
-    bottom: -100px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100px;
-    background-color: #fff;
-    content: ''
-}
-
-.cool-facts-content > i {
-    color: #5b32b4;
-    font-size: 36px;
-}
-
-.counter-area {
-    min-width: 100px;
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-}
-
-.counter-area > h3 {
-    color: #5b32b4;
-    font-size: 60px;
-    margin-bottom: 0;
-    line-height: 1;
-}
-
-.cool-facts-content > p {
-    font-size: 18px;
-    color: #5b32b4;
-    margin-bottom: 0;
-}
-
-/* --------------------------
-:: 8.0 Screenshots Area CSS
+:: Projects CSS
 -------------------------- */
 #jssor_1 {
   position:relative;
   margin:0 auto;
   top:0px;
   left:0px;
-  width:980px;
+  width:900px;
   height:480px;
   overflow:hidden;
   visibility:hidden;
 }
 .slides {
   position:relative;
-  top:0px;left:0px;
-  width:980px;
+  top:0px;
+  left:0px;
+  width:900px;
   height:350px;
   overflow:hidden;
 }
@@ -761,7 +649,7 @@ p {
   position:absolute;
   left:0px;
   bottom:0px;
-  width:980px;
+  width:900px;
   height:100px;
 }
 .jssor-prototype {
@@ -820,8 +708,18 @@ p {
     text-align: center;
 }
 
+.slide-text {
+    font-size: 22px;
+    background-color: #d5e2e9;
+    color: #5b32b4;
+    text-align: center!important;
+    bottom: 0;
+    position: absolute;
+    padding: 0 10px;
+}
+
 /* --------------------------
-:: 9.0 privacy Area CSS
+:: privacy Area CSS
 -------------------------- */
 .contact {
    background-color: white;
@@ -831,8 +729,6 @@ p {
    background-size: cover;
    text-align: right;
 }
-
-
 
 .privacy-heading > h2 {
     font-size: 100px;
@@ -872,68 +768,7 @@ p {
 }
 
 /* --------------------------
-:: 10.0 Terms & Conditions
--------------------------- */
-
-
-
-.rules {
-
-    background: #a865e1;
-    background: -webkit-linear-gradient(to left, #7873ed, #a865e1);
-    background: -webkit-linear-gradient(right, #7873ed, #a865e1);
-    background: -webkit-gradient(linear, right top, left top, from(#7873ed), to(#a865e1));
-    background: -o-linear-gradient(right, #7873ed, #a865e1);
-    background: linear-gradient(to left, #7873ed, #a865e1);
-    position: relative;
-    z-index: 1;
-    background-position: bottom center;
-    background-size: cover;
-    text-align: right;
-}
-
-.rules-heading > p {
-    color:rgb(255, 255, 255);
-}
-
-
-.rule-app-heading > h2 {
-    font-size: 100px;
-    color: #ffffff;
-    font-weight: 700;
-    position: relative;
-    z-index: 3;
-}
-
-.rule-app-heading > h4 {
-    font-size:35px;
-    color: #ffffff;
-    font-weight: 300;
-    position: relative;
-    z-index: 3;
-    padding-bottom: 30px;
-}
-
-
-
-
-.rule-app-heading > h3 {
-    font-size: 332px;
-    position: absolute;
-    top: -134px;
-    font-weight: 900;
-    z-index: -1;
-    color: #fff;
-    opacity: .1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
-}
-
-.rule-app-heading {
-    margin-bottom: 100px;
-}
-
-/* --------------------------
-:: 10.0 Footer Area CSS Start
+:: Footer Area CSS Start
 -------------------------- */
 
 .footer-text > h2 {
@@ -1018,10 +853,6 @@ p {
 
 .footer-menu ul li:last-child a {
     border-left: 0 solid #ddd;
-}
-
-.footer-social-icon {
-    /*margin-bottom: 30px;*/
 }
 
 .footer-menu {

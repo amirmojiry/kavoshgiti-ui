@@ -30,7 +30,7 @@
         font-size: 48px;
     }
     .menu_area .navbar-brand img {
-        height: 45px;
+        width: 50%;
     }
     .header_area.sticky {
         height: 50px;
