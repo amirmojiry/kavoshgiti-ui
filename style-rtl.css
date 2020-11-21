@@ -401,7 +401,7 @@ p {
 :: welcome_area Area CSS
 -------------------------- */
 
-.wellcome_area {
+.welcome_area {
     background-image: url(img/bg-img/welcome-bg.png);
     height: 600px;
     position: relative;
@@ -414,7 +414,7 @@ p {
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.wellcome_area:after {
+.welcome_area:after {
     position: absolute;
     width: 100%;
     left: 0;
@@ -438,7 +438,7 @@ p {
     width: 60%;
 }
 
-.wellcome-heading > h2 {
+.welcome-heading > h2 {
     font-size: 100px;
     color: #ffffff;
     font-weight: 700;
@@ -446,7 +446,7 @@ p {
     z-index: 3;
 }
 
-.wellcome-heading > h4 {
+.welcome-heading > h4 {
     font-size:50px;
     color: #ffffff;
     font-weight: 300;
@@ -455,11 +455,11 @@ p {
 }
 
 
-.wellcome-heading > p {
+.welcome-heading > p {
     color: #fff;
 }
 
-.wellcome-heading > h3 {
+.welcome-heading > h3 {
     font-size: 332px;
     position: absolute;
     top: -134px;
@@ -470,7 +470,7 @@ p {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
 }
 
-.wellcome-heading {
+.welcome-heading {
     margin-bottom: 100px;
 }
 
